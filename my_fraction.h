@@ -1,10 +1,9 @@
 #ifndef MY_FRACTION_H
 #define MY_FRACTION_H
 
-// 'C로 배우는 자료구조' 스타일로 깔끔하게 구조체 정의
 typedef struct {
-    int num; // 분자
-    int den; // 분모
+    int num; 
+    int den; 
 } Fraction;
 
 Fraction reduce_fraction(Fraction f);
