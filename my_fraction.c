@@ -1,11 +1,11 @@
-#define _CRT_SECURE_NO_WARNINGS // 비주얼 스튜디오 sscanf 에러 방지 (반드시 제일 위에 작성!)
+#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "my_math.h"
 #include "my_fraction.h"
 
-// [기약분수 만들기]
+// 기약분수 
 Fraction reduce_fraction(Fraction f) {
     if (f.den == 0) {
         printf("[에러] 분모는 0이 될 수 없습니다!\n");
@@ -45,7 +45,6 @@ Fraction parse_fraction(const char* str) {
     return reduce_fraction(f); 
 }
 
-// [화면에 예쁘게 출력하기]
 void print_fraction(Fraction f) {
     f = reduce_fraction(f);
     if (f.den == 1) {
