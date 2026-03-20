@@ -24,7 +24,7 @@ Fraction reduce_fraction(Fraction f) {
     return f;
 }
 
-// [글자를 분수로 변신] (가산점 요인 포함)
+// [글자를 분수로 변신] 
 Fraction parse_fraction(const char* str) {
     Fraction f = {0, 1};
     
